@@ -26,9 +26,9 @@ title: Julie et François / Ile d'Yeu 2018
 <div class="tabs-target">
 
   <div class="tab-content hotels-tab">
-    <div class="hotel-container">
+    <div class="square-box-container">
       <% data.contacts.hotels.each do |h| %>
-        <div class="hotel">
+        <div class="square-box">
             <h3><%= h.nom %></h3>
             <p><%= h.address %></p>
             <p><%= h.city %></p>
@@ -42,9 +42,9 @@ title: Julie et François / Ile d'Yeu 2018
   </div>
 
   <div class="tab-content hotes-tab hidden">
-    <div class="hotel-container">
+    <div class="square-box-container">
       <% data.contacts.chambres.each do |c| %>
-        <div class="hotel">
+        <div class="square-box">
           <h3><%= c.nom %></h3>
           <p><%= c.address %></p>
           <p><%= c.city %></p>

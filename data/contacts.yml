@@ -71,3 +71,34 @@ chambres:
       tel: "02.51.59.48.17 / 06.78.76.92.16"
       mail: "vcrap@wanadoo.fr"
       site: "https://www.villa-crapouillot.com"
+
+parkings:
+    - nom: "Parking Blanchard"
+      address: "4, rue du Petit Bois"
+      city: "85550, Fromentine"
+      price: ""
+      tel: "02.51.68.54.17"
+      site: "www.parking-blanchard.com"
+    - nom: "Parking Bodin"
+      address: "5, rue des Pins"
+      city: "85550, Fromentine"
+      price: ""
+      tel: "02.51.68.50.63"
+      site: "www.bodin-parking.com "
+    - nom: "Parking Martineau"
+      address: "Z.A. Le Rampy"
+      city: "85550, Fromentine"
+      price: ""
+      tel: "02.51.68.51.62"
+      site: "www.parking-martineau.com"
+    - nom: "Alizés Parking"
+      address: "Z.A. Le Rampy"
+      city: "85550, Fromentine"
+      price: ""
+      tel: "02.51.68.21.22"
+      site: "www.parking-alizes.fr "
+
+
+
+
+

@@ -6,6 +6,9 @@ title: Julie et François / Ile d'Yeu 2018
   <div class="tab-2 active" data-target=".fromentine-tab">
     <h3>Se rendre à Fromentine</h3>
   </div>
+  <div class="tab-2" data-target=".parkings-tab">
+    <h3>Parkings à Fromentine</h3>
+  </div>
   <div class="tab-2" data-target=".traverseeyeu-tab">
     <h3>Traversée vers l'ile d'YEU</h3>
   </div>
@@ -14,27 +17,30 @@ title: Julie et François / Ile d'Yeu 2018
 <div class="tabs-target">
 
   <div class="tab-content fromentine-tab">
-    <h3>Pour ceux qui le peuvent, nous vous conseillons d’arriver le vendredi soir.</h3>
-    <h3>Première étape, rejoindre le port d'embarquement : Fromentine - La Barre de Monts</h3>
-    <%= link_to 'Fromentine', "https://www.google.nl/maps/place/Fromentine,+85550+La+Barre-de-Monts,+France/@46.9137906,-2.5400669,8.78z/data=!4m5!3m4!1s0x48051b5ba222cf19:0x260d375364abb772!8m2!3d46.889175!4d-2.140027", target: :blank %>
-    <h3>En Voiture jusqu'à Fromentine</h3>
+    <h4>Pour ceux qui le peuvent, nous vous conseillons d’arriver le vendredi soir.</h4>
+    <h3>1/Rejoindre Fromentine - La Barre de Monts</h3>
+    <%= link_to image_tag('fromentine.jpg'), "https://www.google.nl/maps/place/Fromentine,+85550+La+Barre-de-Monts,+France/@46.9137906,-2.5400669,8.78z/data=!4m5!3m4!1s0x48051b5ba222cf19:0x260d375364abb772!8m2!3d46.889175!4d-2.140027", target: :blank, id: :"fromentine-map" %>
+    <h4>Pour cela il y a deux options</h4>
+    <h4>Option (1) En Voiture jusqu'à Fromentine:</h4>
       <ul class="voyage-list">
-        <li>- de Paris : 450 km, un peu moins de 5 heures</li>
+        <li>- de Paris : 450 km, 5h</li>
         <li>- de Poitiers : 240 km, 2h40</li>
-        <li>- Nantes - Fromentine : 66 km</li>
+        <li>- Nantes - Fromentine : 66 km, 1h15</li>
       </ul>
       <p>Comptez 1/2 h de battement pour embarquer sereinement.</p>
-    <h3>Train jusqu'à Nantes</h3>
+    <h4>Option (2) Vous arrivez à Nantes</h4>
+      <h4>En train</h4>
       <ul class="voyage-list">
-        <li>1. Paris - Nantes, compter 2h10 de trajet. Trains fréquents</li>
-        <li>2. Puis Nantes – Fromentine en Bus : au départ de la gare SNCF – sortie Sud, (sortez à gauche, plusieurs cars "pays de la Loire" sont garés de l'autre coté du parking en face)</li>
+        <li>- de Paris, 2h10. Trains fréquents</li>
+        <li>- Puis Nantes – Fromentine en Bus : au départ de la gare SNCF – sortie Sud, (sortez à gauche, plusieurs cars "pays de la Loire" sont garés de l'autre coté du parking en face)</li>
         <li>TAPER SUR VOYAGESSNCF.COM : DÉPART/ARIVÉE : FROMENTINE LA BARRE DE MONT</li>
+        <%= link_to 'VoyagesSNCF', "https://www.voyages-sncf.com/" %>
       </ul>
-    <h3>Avion jusqu'à Nantes</h3>
-      <p>Nantes est un aéroport international</p>
-      <p>Vous pouvez rejoindre l'île d'YEU depuis cet aéroport via des petits avions. Il faut vous organiser avec l'aérodrome de l'île. 02.51.58.38.22</p>
-      <%= link_to 'Site', "http://www.ile-yeu/Acces/Aerodrome" %>
-    <h3>Taxi Nantes-Fromentine</h3>
+      <h4>En avion:</h4>
+        <p>Nantes est un aéroport international</p>
+        <p>Vous pouvez rejoindre l'île d'YEU depuis cet aéroport via des petits avions. Il faut vous organiser avec l'aérodrome de l'île. 02.51.58.38.22</p>
+        <%= link_to 'Site', "http://www.ile-yeu/Acces/Aerodrome" %>
+      <h3>Et vous prenez un taxi ou un bus pour faire Nantes-Fromentine</h3>
       <p>Taxis Montois, réservez au 02.51.68.52.83</p>
       <p>tarifs par voiture: (6 et 7 places dans les monospaces)</p>
       <ul class="voyage-list">
@@ -55,6 +61,22 @@ title: Julie et François / Ile d'Yeu 2018
     <p>Nous devrions avoir tous les horaires à la Toussaint, cependant nous vous conseillons dès à présent de réserver votre hébergement</p>
     <%= link_to 'Nos solutions hébergement', "/hebergement" %>
     <p>Dès que nous aurons tous les horaires nous vous enverrons un mail !</p>
+  </div>
+
+  <div class="tab-content parkings-tab hidden">
+    <div class="square-box-container">
+      <% data.contacts.parkings.each do |h| %>
+        <div class="square-box">
+            <h3><%= h.nom %></h3>
+            <p><%= h.address %></p>
+            <p><%= h.city %></p>
+            <p><%= h.price %>€</p>
+            <p><%= h.tel %></p>
+            <p><%= h.mail %></p>
+            <%= link_to "Site Internet", h.site, target: :blank, class: "lien"  %>
+        </div>
+      <% end %>
+    </div>
   </div>
 
 </div>
