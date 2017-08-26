@@ -1,7 +1,10 @@
 .tabs-2 {
   display: flex;
   justify-content: center;
-  padding: 15px 0px;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  background-color: lightgrey;
 }
 .tabs-2 h3 {
   font-size: 20px;
@@ -15,18 +18,22 @@
 }
 .tab-2 {
   text-align: center;
-  padding: 20px 30px;
+  padding: 0px 30px 20px 30px;
 }
 .tab-2.active {
   border-bottom: solid orange;
   color: black;
 }
 
+.tab-content {
+  padding: 0px 30px;
+}
+
 
 @media only screen and (max-width: 500px) {
     .tabs-2 {
         display: block;
-        padding-top: 30px;
+        padding-top: 0px;
     }
     .tab-2 {
       padding: 10px 0px;

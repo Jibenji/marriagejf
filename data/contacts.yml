@@ -19,7 +19,7 @@ hotels:
       price: "40-70"
       tel: "02.51.58.36.77 / 06.08.31.26.16"
       mail: "hotellegrandlarge@hotmail.fr"
-      site: "www.hotel-legrandlarge.com"
+      site: "http://www.ile-yeu.fr/Hebergement/Hotels/LE-GRAND-LARGE"
     - nom: "Les Voyageurs"
       address: "10 Quai Carnot"
       city: "Port Joinville"
